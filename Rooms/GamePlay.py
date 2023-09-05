@@ -21,3 +21,8 @@ class GamePlay(Level):
         self.add_room_object(self.score)
         self.lives = Lives(self, Globals.SCREEN_WIDTH - 150, 20)
         self.add_room_object(self.lives)
+
+        self.bg_music = self.load_sound('RoBKTA - Splatted By Glamour (Splatoon x Undertale).mp3') 
+        self.bg_music.play(loops=100000)
+        self.laser_sound = self.load_sound('vine-boom.mp3') 
+
